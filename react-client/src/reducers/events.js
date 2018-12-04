@@ -1,11 +1,13 @@
 const initialState=[
     {
-        eventName: 'Event 1',
-        location: 'Location 1'
+        id: 1,
+        eventName: 'JS + .Net Wedding',
+        location: 'The ROW, DTLA'
     },
     {
-        eventName: 'Event 2',
-        location: 'Location 2' 
+        id:2,
+        eventName: 'Wedding 2',
+        location: 'Las Vegas, NV' 
     }
 ]
 
@@ -15,11 +17,15 @@ const reducer = (state = initialState, action) => {
             return [
                 ...state,
                 {
+                    id: action.id,
                     eventName: action.eventName,
                     location: action.location
                 }
             ]
-            break;
+        case 'GET_EVENT_BY_ID':
+            const itemArray = state.filter(item => item.id === action.id)
+            const obj = itemArray.length > 0 ? itemArray[0] : {};
+            return obj;
         default:
             return state;
     }

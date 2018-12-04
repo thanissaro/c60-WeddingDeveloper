@@ -55,7 +55,7 @@ class Register extends React.Component {
                 <div className="col col-sm-6 col-sm-offset-3">
                     <div className="panel panel-default">
                         <div className="panel-heading style=">
-                            <h1>Wedding Developer Registration</h1>
+                            <h2>Wedding Developer Registration</h2>
                             <form>
                                 <FormGroup
                                     controlId="formatBasicText"

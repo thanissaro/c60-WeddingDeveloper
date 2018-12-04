@@ -46,7 +46,7 @@ class App extends Component {
             <Route path="/about/" component={About} />
             <Route path="/users/" component={Users} />
             <Route path="/events" component={Events} />
-            <Route path="/events-form" component={EventsForm} />
+            <Route path="/events-form/:id?" component={EventsForm} />
             <Route path="/register" component={Register} />
           </div>
         </Router>
