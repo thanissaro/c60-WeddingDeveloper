@@ -13,6 +13,7 @@ const store = createStore(weddingDeveloper);
 const Index = () => <h2>Home</h2>;
 const About = () => <h2>About</h2>;
 const Users = () => <h2>Users</h2>;
+const Events = () => <h2>Events</h2>;
 class App extends Component {
   render() {
     return (
@@ -54,5 +55,7 @@ class App extends Component {
     );
   }
 }
+
+
 
 export default App;
