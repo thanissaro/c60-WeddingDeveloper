@@ -19,7 +19,6 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-        <div>
           <div>
             <nav>
               <ul>
@@ -50,7 +49,6 @@ class App extends Component {
             <Route path="/events" component={Events} />
             <Route path="/events-form/:id?" component={EventsForm} />
             <Route path="/register" component={Register} />
-          </div>
           </div>
         </Router>
       </Provider>
